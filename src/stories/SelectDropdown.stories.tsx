@@ -62,7 +62,7 @@ const meta: Meta<typeof SelectDropdown> = {
         (Story) => (
             <div style={{ width: '400px', padding: '20px' }}>
                 <label style={{ display: 'block', marginBottom: '8px', fontWeight: 500 }}>
-                    Label
+                    Select Country
                 </label>
                 <Story />
             </div>
@@ -175,8 +175,8 @@ export const CustomOptionRendering: Story = {
                         borderRadius: '50%',
                         backgroundColor:
                             option.value === 'active' ? '#22c55e' :
-                            option.value === 'pending' ? '#f59e0b' :
-                            option.value === 'completed' ? '#3b82f6' : '#6b7280',
+                                option.value === 'pending' ? '#f59e0b' :
+                                    option.value === 'completed' ? '#3b82f6' : '#6b7280',
                     }}
                 />
                 <span>{option.label}</span>

@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/makyo-select"
+    "url": "https://github.com/raytqr/makyo-select.git"
   },
   "keywords": [
     "react",
@@ -39,6 +39,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:demo": "tsc -b && vite build -c vite.config.demo.ts",
     "build:lib": "tsc -b && vite build && npm run build:types",
     "build:types": "tsc --emitDeclarationOnly --outDir dist",
     "lint": "eslint .",
@@ -66,6 +67,7 @@
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "chromatic": "^15.0.0",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
